@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drones Tenerife</title>
+     <link rel="icon" type="image/x-icon" href="/resources/media/favicon.png">
+    <link rel="stylesheet" href="./resources/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#section_services">Servicios</a>
+            <a href="#section_gallery">Galería</a>
+            <a href="">Sobre nosotros</a>
+            <a href="#section_contact">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section id="section_hero">
+            <div id="section_hero_text_container">
+                <h1>Capturamos tu proyecto desde una nueva perspectiva</h1>
+                <div id="section_hero_line"></div>
+                <p>Inmuebles, terrenos, obras, hoteles, eventos, inspecciones… si puede verse desde el aire, podemos capturarlo.</p>
+                <a id="section_hero_cta" href="#section_contact">Pide tu presupuesto</a>
+            </div>
+            <div id="section_hero_video_container">
+                <video id="section_hero_video" width="100%" height="100%" autoplay muted playsinline loop preload="auto">
+                    <source id="test" src="./resources/media/hero_video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="section_services">
+            <h2>Nuestros servicios</h2>
+            <div id="section_services_cards_container">
+                <div class="section_services_card">
+                    <h3>Grabación aérea de inmuebles y terrenos</h3>
+                    <p>- Vídeos 4K hasta 120fps</p>
+                    <p>- Fotografías HDR</p>
+                    <p>- Ideal para inmobiliarias, constructoras y proyectos visuales</p>
+                    <a href="#section_contact" class="section_sevices_cta">Solicitar pack</a>
+                </div>
+                <div class="section_services_card">
+                    <h3>Fotogrametría y modelos 3D</h3>
+                    <p>- Ortofotos georreferenciadas</p>
+                    <p>- Nubes de puntos</p>
+                    <p>- Mediciones de superficies y volúmenes</p>
+                    <a href="#section_contact" class="section_sevices_cta">Solicitar pack</a>
+                </div>
+                <div class="section_services_card">
+                    <h3>Inspecciones técnicas con drones</h3>
+                    <p>- Tejados, placas solares, antenas</p>
+                    <p>- Reducción de riesgos</p>
+                    <p>- Detalles en alta resolución</p>
+                    <a href="#section_contact" class="section_sevices_cta">Solicitar pack</a>
+                </div>
+                <div class="section_services_card">
+                    <h3>Fotos y vídeos promocionales</h3>
+                    <p>- Eventos, hoteles, turismo, empresas</p>
+                    <p>- Contenido visual de impacto</p>
+                    <p>- Edición profesional</p>
+                    <a href="#section_contact" class="section_sevices_cta">Solicitar pack</a>
+                </div>
+            </div>
+        </section>
+        <section id="section_gallery">
+            <h2>Algunos de nuestros trabajos</h2>
+            <div id="section_gallery_stills_container">
+                <div class="section_gallery_still" data-index="0">
+                    <img class="user-drag-none" src="./resources/media/galleryStill_1.jpg" alt="Picture of Tenerife">
+                </div>
+                <div class="section_gallery_still" data-index="1">
+                    <img class="user-drag-none" src="./resources/media/galleryStill_2.jpg" alt="Picture of Tenerife">
+                </div>
+                <div class="section_gallery_still" data-index="2">
+                    <img class="user-drag-none" src="./resources/media/galleryStill_3.jpg" alt="Picture of Tenerife">
+                </div>
+                <div class="section_gallery_still" data-index="3">
+                    <img class="user-drag-none" src="./resources/media/galleryStill_4.jpg" alt="Picture of Tenerife">
+                </div>
+            </div>
+        </section>
+        <section id="section_contact">
+            <h2>¿Hablamos?
+                <p id="section_contact_subtitle">Cuéntanos tu idea y te respondemos en menos de 24 h.<br>Presupuesto sin compromiso.</p>
+            </h2>
+            <div id="section_contact_form_container">
+                <form id="section_contact_form">
+                    <div id="form_answears_container">
+                        <div id="form_name_container" class="form_flex_answears">
+                            <label for="form_name">Nombre y apellido</label>
+                            <input id="form_name" class="form_input" type="text" required placeholder="Tu nombre" name="name">
+                        </div>
+                        <div id="form_email_container" class="form_flex_answears">
+                            <label for="form_email">Correo electrónico</label>
+                            <input id="form_email" class="form_input" type="email" required placeholder="Tu correo electrónico" name="email">
+                        </div>
+                        <div id="form_phone_container" class="form_flex_answears">
+                            <label for="form_phone">Teléfono móvil</label>
+                            <input id="form_phone" class="form_input" type="tel" required placeholder="Tu teléfono móvil" name="phone">
+                        </div>
+                        <div id="form_message_container" class="form_flex_answears">
+                            <label for="form_message">Cuéntanos sobre tu proyecto y necesidades</label>
+                            <textarea id="form_message" class="form_input" type="text" required placeholder="Tu proyecto" name="message"></textarea>
+                        </div>
+                    </div>
+                    <button id="form_submit_btn" type="submit">Enviar</button>
+                </form>
+                <div id="section_contact_thanku" style="display:none;">
+                    <p>¡Gracias por tu consulta! Nos pondremos en contacto contigo en breve.</p>
+                </div>
+            </div>
+        </section>
+        <div id="section_gallery_carousel_container" class="hidden">
+            <div id="section_gallery_carousel_close_btn">
+                <span id="carousel_close_span_1" class="carousel_close_span"></span>
+                <span id="carousel_close_span_2" class="carousel_close_span"></span>
+            </div>
+            <div id="section_gallery_carousel_stage">
+                <div id="carousel_arrow_previous" class="carousel_arrow">
+                    <svg viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_down [#339]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -6684.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M144,6525.39 L142.594,6524 L133.987,6532.261 L133.069,6531.38 L133.074,6531.385 L125.427,6524.045 L124,6525.414 C126.113,6527.443 132.014,6533.107 133.987,6535 C135.453,6533.594 134.024,6534.965 144,6525.39" id="arrow_down-[#339]"> </path> </g> </g> </g> </g></svg>
+                </div>
+                <div id="carousel_viewport">
+                    <div id="carousel_track">
+                        <div class="section_gallery_slide">
+                            <iframe class="yt_frame" src="https://www.youtube.com/embed/8QGtpF7tnS0?si=0xZv0FlE-naPbD3P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="section_gallery_slide">
+                            <iframe class="yt_frame" src="https://www.youtube.com/embed/jSsYgKIjHqM?si=KrQthDBFPnVClWST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="section_gallery_slide">
+                            <iframe class="yt_frame" src="https://www.youtube.com/embed/ZIJ2Fv3ZFt0?si=E5UN8hjtfdaMuWoj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="section_gallery_slide">
+                            <iframe class="yt_frame" src="https://www.youtube.com/embed/MZNKp8QIMLk?si=7RtFFbyJbCHjqT-p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel_arrow_next" class="carousel_arrow">
+                    <svg viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" transform="rotate(270)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_down [#339]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-180.000000, -6684.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M144,6525.39 L142.594,6524 L133.987,6532.261 L133.069,6531.38 L133.074,6531.385 L125.427,6524.045 L124,6525.414 C126.113,6527.443 132.014,6533.107 133.987,6535 C135.453,6533.594 134.024,6534.965 144,6525.39" id="arrow_down-[#339]"> </path> </g> </g> </g> </g></svg>
+                </div>
+            </div>
+            <div id="carousel_dots"></div>
+        </div>
+    </main>
+    <script src="./resources/script/script.js"></script>
+</body>
+</html>
