@@ -111,31 +111,35 @@ thumbnails.forEach(still => {
 
 
 // ====== Form submit ======
-const scriptURL = "https://script.google.com/macros/s/AKfycbwcWuJf4YfP23AVrvQSXNZp0V-QepOsVn5DMidqcpXSO09VSFICQmGI3qry2_I0Aqiq_g/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbwZyJU5614nmQUWkzZMMLuNglFZGzaaS89brAcaPnDg1JLRAVTGDuq1BPloBWZWbIYF3g/exec";
 const submitBtn = document.getElementById("form_submit_btn");
 const form = document.getElementById("section_contact_form");
 
 form.addEventListener("submit", e => {
-    e.preventDefault();
+  e.preventDefault();
 
-    submitBtn.classList.add("form_btn_loading");  // <-- activate animation
-    submitBtn.textContent = "Enviando...";
+  submitBtn.classList.add("form_btn_loading");
+  submitBtn.textContent = "Enviando...";
 
-    const formData = new FormData(e.target);
-    const jsonData = {};
-    formData.forEach((value, key) => jsonData[key] = value);
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    message: form.message.value
+  };
 
-    fetch(scriptURL, {
-      method: "POST",
-      body: JSON.stringify(jsonData)
-    })
-    .then(() => {
-      form.style.display = "none";
-      document.getElementById("section_contact_thanku").style.display = "block";
-    })
-    .catch(err => {
-      alert("Error: " + err);
-      submitBtn.disabled = false;
-      submitBtn.classList.remove("loading"); // remove animation on error
-    });
+  fetch(scriptURL, {
+    method: "POST",
+    body: JSON.stringify(data),
+    mode: "no-cors"
+  })
+  .then(() => {
+    form.style.display = "none";
+    document.getElementById("section_contact_thanku").style.display = "block";
+  })
+  .catch(err => {
+    alert("Error: " + err);
+    submitBtn.disabled = false;
+    submitBtn.classList.remove("form_btn_loading");
+  });
 });
