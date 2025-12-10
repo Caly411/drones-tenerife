@@ -143,3 +143,24 @@ form.addEventListener("submit", e => {
     submitBtn.classList.remove("form_btn_loading");
   });
 });
+
+
+
+// ====== Services colpase ======
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = Array.from(document.getElementsByClassName("section_services_card_content"));
+
+    cards.forEach(el => {
+        const baseHeight = el.querySelector("h3").offsetHeight;
+        el.style.height = `${baseHeight}px`;
+
+        el.addEventListener("mouseenter", () => {
+            el.style.height = `${el.scrollHeight}px`;
+        });
+
+        el.addEventListener("mouseleave", () => {
+            el.style.height = `${baseHeight}px`;
+        });
+    });
+});
