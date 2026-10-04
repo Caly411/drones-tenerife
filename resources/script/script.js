@@ -111,7 +111,7 @@ thumbnails.forEach(still => {
 
 
 // ====== Form submit ======
-const scriptURL = "https://script.google.com/macros/s/AKfycbwZyJU5614nmQUWkzZMMLuNglFZGzaaS89brAcaPnDg1JLRAVTGDuq1BPloBWZWbIYF3g/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbyeZq0HU0xGniYo08oZKngLeBbvuz65osXriJWoXGgGcSu7JJiG6-4zISbtpnqxWHhztQ/exec";
 const submitBtn = document.getElementById("form_submit_btn");
 const form = document.getElementById("section_contact_form");
 

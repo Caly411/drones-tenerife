@@ -237,7 +237,10 @@ h1 {
 
 #section_aboutus_container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 8rem;
 }
 
 #section_aboutus_cards_grid {
@@ -266,6 +269,43 @@ h1 {
     width: 3rem;
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
+}
+
+#section_aboutus_pilot_card {
+    display: flex;
+    border: #000 solid 0.125rem;
+    box-shadow: #000 -0.5rem 0.5rem;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+#pilot_photo {
+    height: 6rem;
+    border-radius: 100%;
+}
+
+#section_aboutus_pilot_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#section_aboutus_pilot_text {
+    
+}
+
+#section_aboutus_pilot_certifications {
+    display: flex;
+    height: 3rem;
+    width: fit-content;
+    gap: 2rem;
+}
+
+#section_aboutus_pilot_certifications img {
+    box-shadow: #888888 -0.25rem 0.25rem;
 }
 
 
