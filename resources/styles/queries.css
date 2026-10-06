@@ -1,0 +1,56 @@
+@media (max-width: 1250px)  {
+    
+    #section_hero_text_container {
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #section_aboutus_cards_grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #section_aboutus_container {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 1000px)  {
+
+    #section_hero_video_container {
+        width: 150%;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (max-width: 900px)  {
+
+    #section_hero_cta {
+        font-size: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    #section_hero_text_container p {
+        font-size: 0.9rem;
+    }   
+    
+    #section_gallery_stills_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .section_services_hidden_content p {
+        line-height: 1.25rem;
+    }
+
+    .section_services_cta {
+        padding: 1rem 2rem;
+    }
+}
