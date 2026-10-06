@@ -429,12 +429,13 @@ h1 {
 }
 
 #carousel_arrow_next {
-    box-shadow: #000 -0.5rem 0.5rem;
+    box-shadow: #000 -0.5rem -0.5rem;
+    transform: rotate(270deg);
 }
 
 #carousel_arrow_next:hover {
-    transform: translate(-0.25rem, 0.25rem);
-    box-shadow: #000 -0.25rem 0.25rem;
+    box-shadow: #000 -0.25rem -0.25rem;
+    transform: rotate(270deg);
 }
 
 #carousel_viewport {
