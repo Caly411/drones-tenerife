@@ -28,6 +28,28 @@
         font-size: 1.25rem;
     }
 
+    #section_gallery_carousel_container {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    #section_gallery_carousel_stage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 98vw;
+    }
+
+    #carousel_viewport {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        column-gap: 0px;
+        row-gap: 0px;
+    }
+
+    .carousel_arrow {
+        margin: auto;
+    }
+
 }
 
 @media (max-width: 900px)  {
@@ -65,6 +87,7 @@
     #section_hero {
         padding-left: 0rem;
         padding-right: 0rem;
+        position: relative;
     }
 
     nav {
@@ -120,9 +143,8 @@
     #section_hero_text_container {
         position: absolute;
         width: 60%;
-        top: 40%;
-        left: 40%;
-        transform: translate(-50%, -50%);
+        top: 4rem;
+        left: 4%;
         color: #fff;        
     }
 
