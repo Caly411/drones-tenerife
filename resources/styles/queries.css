@@ -62,6 +62,11 @@
         padding-top: 2rem;
     }
 
+    #section_hero {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
     nav {
         display: flex;
         gap: 2rem;
@@ -115,7 +120,7 @@
     #section_hero_text_container {
         position: absolute;
         width: 60%;
-        top: 45%;
+        top: 40%;
         left: 40%;
         transform: translate(-50%, -50%);
         color: #fff;        
@@ -200,17 +205,16 @@
         font-size: 0.6rem;
     }
 
-    #section_contact_form_container {
-        
-    }
-
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
 
-    #section_hero_text_container {
-        top: 32%;
-        left: 40%;      
+    .section_services_card_content h3 {
+        font-size: 0.7rem;
+    }
+    
+    .section_services_card_content h3 {
+        padding: 2.4rem;
     }
 
 }
