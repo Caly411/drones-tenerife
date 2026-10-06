@@ -54,3 +54,163 @@
         padding: 1rem 2rem;
     }
 }
+
+@media (max-width: 700px) {
+
+    section {
+        margin: 0rem 2rem 6rem 2rem;
+        padding-top: 2rem;
+    }
+
+    nav {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    nav a {
+        color: #000;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    .subheading {
+        font-size: 0.7rem;
+    }
+
+    #section_hero_text_container p {
+        font-size: 0.5rem;
+    }
+
+    #section_hero_cta {
+        font-size: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    #section_hero_video_container {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        filter: brightness(50%);
+        z-index: -1;
+    }
+
+    #section_hero_text_container {
+        position: absolute;
+        width: 60%;
+        top: 45%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        color: #fff;        
+    }
+
+    #section_hero_line {
+        background-color: #fff;
+    }
+
+    #section_hero_cta {
+        background-color: #ffffff2a;
+        box-shadow: #00000042 -0.5rem 0.5rem;
+        margin-left: 0rem;
+        border: #fff 0.125rem solid;
+        color: #fff;
+    }
+
+    #section_hero_cta:hover {
+        transform: translate(-0.25rem, 0.25rem);
+        box-shadow: #000 -0.25rem 0.25rem;
+    }
+
+    .section_services_hidden_content p {
+        font-size: 0.6rem;
+        padding: 0 0 1rem 2rem;
+        width: 60%;
+        line-height: 0.8rem;
+        text-align: justify;
+    }
+
+    .section_services_cta {
+        font-size: 0.6rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .section_services_card_content h3 {
+        padding: 2.2rem;
+    }
+
+    .section_aboutus_card_text p {
+        font-size: 0.5rem;
+    }
+
+    .section_aboutus_card_svg {
+        width: 2rem;
+    }
+
+    .section_aboutus_card {
+        max-width: 20rem;
+    }
+
+    #section_aboutus_cards_grid {
+        gap: 2rem;
+    }
+
+    #section_aboutus_pilot_text p {
+        font-size: 0.5rem;
+    }
+
+    #pilot_photo {
+        height: 5rem;
+    }
+
+    #section_aboutus_pilot_info {
+        gap: 1rem;
+    }
+
+    #section_aboutus_pilot_certifications {
+        height: 2rem;
+        gap: 1rem;
+    }
+
+    .form_flex_answears label {
+        font-size: 0.75rem;
+    }
+
+    .form_flex_answears input {
+        font-size: 0.6rem;
+    }
+
+    .form_flex_answears textarea {
+        font-size: 0.6rem;
+    }
+
+    #section_contact_form_container {
+        
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #section_hero_text_container {
+        top: 32%;
+        left: 40%;      
+    }
+
+}

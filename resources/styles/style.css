@@ -78,7 +78,7 @@ nav {
 nav a {
     color: #000;
     text-decoration: none;
-    font-size: 1;
+    font-size: 1rem;
     transition: 0.3s;
 }
 
@@ -300,6 +300,7 @@ h1 {
 }
 
 #section_aboutus_pilot_certifications {
+    margin: auto;
     display: flex;
     height: 3rem;
     width: fit-content;
