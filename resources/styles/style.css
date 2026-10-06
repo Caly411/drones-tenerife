@@ -414,12 +414,25 @@ h1 {
     cursor: pointer;
     padding: 0.25rem;
     border: solid 0.125rem #000;
-    box-shadow: #000 -0.5rem 0.5rem;
     transition: 0.3s;
     flex-shrink: 0;
 }
 
-.carousel_arrow:hover {
+#carousel_arrow_previous {
+    transform: rotate(90deg);
+    box-shadow: #000 0.5rem 0.5rem;
+}
+
+#carousel_arrow_previous:hover {
+    box-shadow: #000 0.25rem 0.25rem;
+    transform: rotate(90deg);
+}
+
+#carousel_arrow_next {
+    box-shadow: #000 -0.5rem 0.5rem;
+}
+
+#carousel_arrow_next:hover {
     transform: translate(-0.25rem, 0.25rem);
     box-shadow: #000 -0.25rem 0.25rem;
 }
